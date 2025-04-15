@@ -5,15 +5,14 @@ let language = navigator.language;
 let page = 1;
 let maxPage;
 
-//Data
 
 const API = axios.create({
-    // URL base
+
     baseURL: 'https://api.themoviedb.org/3',
     headers: {
         'Content-Type': 'application/json;charset=utf-8'
     },
-    // Query parameters
+
     params: {
         'api_key': API_KEY,
         'language': language,
@@ -47,17 +46,6 @@ export function likeMovie(movie) {
   getTrendingMoviesPreview();
   getLikedMovies();
 }
-
-// Utils
-
-// const lazyLoader = new IntersectionObserver((entries) => {
-//     entries.forEach((entry) => {
-//         console.log(entry);
-//        if (entry.isIntersecting) {
-//         entry.target.setAttribute('loading', 'lazy')
-//        }
-//     })
-// })
 
  
 export function createMovies(movies, container, clean = true) {

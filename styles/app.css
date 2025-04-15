@@ -347,12 +347,10 @@ button:hover {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 3.2rem 2.4rem;
 }
 
 .genericList-container .movie-container {
   display: inline-block;
-  width: 47.5%;
 }
 
 .genericList-container .movie-img {
